@@ -32,3 +32,15 @@ $('#business').click(function(){
         $('#individual').removeClass('active_state');
     }
 })
+
+$('.upload_doc').change(function(e){
+    var fileName = e.target.files[0].name;
+    //    $('#passport_file_name').val(fileName);
+    e.target.parentElement.previousElementSibling.children[0].value = fileName;
+    console.log(e);
+});
+
+//$('#curriculum_vitae').change(function(e){
+//    var fileName = e.target.files[0].name;
+//    $('#curriculum_vitae_file_name').val(fileName);
+//});
