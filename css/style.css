@@ -85,3 +85,13 @@ body {
 	border: 1px solid #0071BC !important;
 	color: #0071BC !important;
 }
+
+#business_wrapper {
+	display: none;
+}
+
+@media (min-width:320px) and (max-width:720px) {
+	.auth__wrapper {
+		padding: 1em;
+	}
+}
