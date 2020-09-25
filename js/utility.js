@@ -8,7 +8,7 @@ $(document).scroll(function () {
 });
 
 //Note we need a token for geocode for dwayremit
-var iptoken = '47e8ba0b4941cf';
+var iptoken = '';
 
 $(function () {
     if($(".country").length){
