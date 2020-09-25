@@ -97,15 +97,14 @@
 
 						<div class="col-lg-5 offset-lg-1">
 							<img src="img/logo_icon_pattern.png" class="img-fluid d-none d-lg-block position-absolute" style="top: -220px; right: -210px" alt="">
-							<div class="calculator">
+							<div class="calculator pt-5">
 								<form>
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
 											<label for="sender_value">You Send</label>
-											<input type="text" class="form-control" id="sender_value" name="sender_value" placeholder="" value="1000">
+											<input type="text" class="form-control input" id="sender_value" name="sender_value" placeholder="" value="1000">
 										</div>
 										<select class="custom-select" id="sender_currency">
-
 											<option selected value="USD">USD</option>
 											<option  value="GBP">GBP</option>
 											<option value="EUR">EUR</option>
@@ -113,11 +112,10 @@
 										</select>
 									</div>
 
-
 									<div class="input-group mb-3">
 										<div class="input-group-prepend">
 											<label for="receiver_value">Receipient gets</label>
-											<input type="text" class="form-control" id="receiver_value" placeholder="">
+											<input type="text" class="form-control" disabled id="receiver_value" placeholder="">
 										</div>
 										<select class="custom-select" id="receiver_currency">
 											<option selected value="NGN">NGN</option>
@@ -360,7 +358,6 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
 	<script src="js/numeral.min.js"></script>
 	<script src="js/utility.js"></script>
 </html>

@@ -109,6 +109,33 @@ $("#receiver_currency").change(function(){
     convert(senderCurrency,receiverCurrency,amount);
 });
 
+//setup before functions
+var typingTimer;                //timer identifier
+var doneTypingInterval = 2000;  //time in ms, 5 second for example
+var $input = $('.input');
+
+//on keyup, start the countdown
+$input.on('keyup', function (e) {
+    clearTimeout(typingTimer);
+    typingTimer = setTimeout(doneTyping(e), doneTypingInterval);
+});
+
+//on keydown, clear the countdown
+$input.on('keydown', function () {
+    clearTimeout(typingTimer);
+});
+
+//user is "finished typing," do something
+function doneTyping (e) {
+    console.log(e.currentTarget.value);
+    console.log('hi');
+    var receiverCurrency = $("#receiver_currency").val();
+    var senderCurrency = $("#sender_currency").val();
+
+    var amount = $('#sender_value').val();
+
+    convert(senderCurrency,receiverCurrency,amount);
+}
 
 function convert(from, to , amount) {
     console.log(from,to,amount)

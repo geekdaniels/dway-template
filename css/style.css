@@ -426,6 +426,11 @@ nav .logout:hover {
 	font-weight: 500;
 }
 
+.calculator .form-control:disabled, .form-control[readonly] {
+	background-color: #fff;
+	opacity: 1;
+}
+
 .calculator .custom-select{
 	height: 70px;
 	color: #fff;
