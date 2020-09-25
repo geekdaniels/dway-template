@@ -1,3 +1,12 @@
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 100) {
+        $('nav').addClass('fixed-top');
+    } else {
+        $('nav').removeClass('fixed-top');
+    }
+});
+
 //Note we need a token for geocode for dwayremit
 var iptoken = '47e8ba0b4941cf';
 
@@ -40,7 +49,35 @@ $('.upload_doc').change(function(e){
     console.log(e);
 });
 
-//$('#curriculum_vitae').change(function(e){
-//    var fileName = e.target.files[0].name;
-//    $('#curriculum_vitae_file_name').val(fileName);
-//});
+
+/**
+ * forEach implementation for Objects/NodeLists/Arrays, automatic type loops and context options
+ *
+ * @private
+ * @author Todd Motto
+ * @link https://github.com/toddmotto/foreach
+ * @param {Array|Object|NodeList} collection - Collection of items to iterate, could be an Array, Object or NodeList
+ * @callback requestCallback      callback   - Callback function for each iteration.
+ * @param {Array|Object|NodeList} scope=null - Object/NodeList/Array that forEach is iterating over, to use as the this value when executing callback.
+ * @returns {}
+ */
+var forEach = function (t, o, r) {
+    if ("[object Object]" === Object.prototype.toString.call(t))
+        for (var c in t)
+            Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
+    else for (var e = 0, l = t.length; l > e; e++) o.call(r, t[e], e, t);
+};
+
+var hamburgers = document.querySelectorAll(".hamburger");
+if (hamburgers.length > 0) {
+    forEach(hamburgers, function (hamburger) {
+        hamburger.addEventListener(
+            "click",
+            function () {
+                this.classList.toggle("is-active");
+            },
+            false
+        );
+    });
+}
+
