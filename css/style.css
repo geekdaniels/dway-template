@@ -366,9 +366,11 @@ nav .logout:hover {
 
 .calculator .fees {
 	color: #2F465C;
+	font-size: 14px;
 }
 .calculator .conversion__title,.calculator .conversion {
 	color: #2F465C;
+	font-size: 14px;
 }
 
 .calculator .transfer {
@@ -426,7 +428,7 @@ nav .logout:hover {
 
 .footer__description, .footer__description a {
 	color: rgba(255,255,255,.7);
-	font-size: 13px !important;
+	font-size: 12px !important;
 }
 
 .footer__title {
@@ -438,7 +440,7 @@ nav .logout:hover {
 
 .footer a, .footer li {
 	color: rgba(255,255,255,.7);
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .footer a:hover {
