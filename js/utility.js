@@ -81,3 +81,58 @@ if (hamburgers.length > 0) {
     });
 }
 
+
+// set endpoint and your API key
+apiKey = 'd884e934364c264fa566';
+
+//Set defaults
+
+defaultAmount = $('#sender_value').val();
+defaultFrom = $("#sender_currency").val();
+defaultTo = $("#receiver_currency").val();
+
+$("#sender_currency").change(function(){
+    var senderCurrency = $(this).children("option:selected").val();
+    var receiverCurrency = $("#receiver_currency").val();
+
+    var amount = $('#sender_value').val();
+
+    convert(senderCurrency,receiverCurrency,amount);
+});
+
+$("#receiver_currency").change(function(){
+    var receiverCurrency = $(this).children("option:selected").val();
+    var senderCurrency = $("#sender_currency").val();
+
+    var amount = $('#sender_value').val();
+
+    convert(senderCurrency,receiverCurrency,amount);
+});
+
+
+function convert(from, to , amount) {
+    console.log(from,to,amount)
+    var currVal = $("#receiver_value");
+    currVal.val("");
+
+    var query = from + "_" + to;
+
+    currVal.attr("placeholder", "Converting...");
+    $.getJSON(`https://free.currconv.com/api/v7/convert?q=${query}&compact=y&apiKey=${apiKey}&callback=?`,
+              function(data){
+
+        try {
+            var currencyAmount = parseFloat(amount);
+            currVal.val(numeral(currencyAmount * data[query].val).format("0,0.00[0]"));
+        } catch (e) {
+            console.log(e);
+            alert("Please enter a number in the Amount field.");
+        }
+
+        currVal.attr("placeholder", "Press Convert button");
+    });
+}
+
+convert(defaultFrom, defaultTo , defaultAmount);
+
+
