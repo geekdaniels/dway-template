@@ -498,4 +498,14 @@ nav .logout:hover {
 	.calculator .input-group-prepend {
 		width: 65%;
 	}
+
+	.banner {
+		height: auto;
+		position: relative;
+	}
+
+	.banner--bg {
+		height: auto;
+	}
+
 }
