@@ -32,7 +32,7 @@ nav .logout:hover {
 
 
 .auth--bg {
-	background-image: url(../img/auth_image.png);
+	background-image: url(../img/auth_image.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	min-height: 100vh;
