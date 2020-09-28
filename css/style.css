@@ -14,7 +14,9 @@ body {
 	overflow-x: hidden !important;
 }
 
-
+.font--14 {
+	font-size: 14px;
+}
 
 nav .logout {
 	background-color: var(--secondary-color);
@@ -441,6 +443,38 @@ nav .logout:hover {
 .calculator label{
 	position: absolute; left: 10px; font-size: 12px; padding-top: 8px;color: #6B6B6B;
 }
+
+.other__nav {
+	background-color: var(--primary-color);
+}
+
+.contact__intro {
+	background-color: #004370;
+}
+
+.contact__intro h3 {
+	color: var(--white);
+	font-weight: 600;
+}
+
+.contact__form input.form-control {
+	height: 55px;
+}
+
+.contact__form button {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color) !important;
+	color: var(--white) !important;
+	border-radius: 0px;
+	font-weight: 500;
+}
+
+.contact__form button:hover {
+	background-color: #EC7C0F;
+	border: 1px solid var(--secondary-color) !important;
+	color: var(--white);
+}
+
 
 /*Footer styles*/
 .footer {
