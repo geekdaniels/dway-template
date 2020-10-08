@@ -147,12 +147,11 @@ function convert(from, to , amount) {
     currVal.attr("placeholder", "Converting...");
     $.getJSON(`https://free.currconv.com/api/v7/convert?q=${query}&compact=y&apiKey=${apiKey}&callback=?`,
               function(data){
-
+        console.log(data);
         try {
             var currencyAmount = parseFloat(amount);
             currVal.val(numeral(currencyAmount * data[query].val).format("0,0.00[0]"));
         } catch (e) {
-            console.log(e);
             alert("Please enter a number in the Amount field.");
         }
 
