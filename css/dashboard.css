@@ -456,8 +456,40 @@ CONTENT STYLE
     height: 48px;
 }
 
+.settings-card {
+    border: 1.3px solid rgba(130, 130, 130, 0.3);
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    border-radius: 0px 10px;
+    height: 100px;
+    align-content: center;
+    transition: .2s;
+}
+
+.settings-card:hover {
+    border: 1.3px solid rgba(130, 130, 130, 0.3);
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0px 10px;
+    height: 100px;
+    align-content: center;
+    transform: scale(1.02);
+}
 
 
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
 
 /*DASHBOARD STYLES END*/
 
