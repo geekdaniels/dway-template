@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0071BC;
-    --dashboard-nav: linear-gradient(90deg, #004370 55.42%, #0071BC 100%);;
+    --dashboard-nav: linear-gradient(90deg, #004370 55.42%, #0071BC 100%);
     --sidebar-hover: #F8F8F8;
     --primary-background: #fff;
 }
@@ -29,6 +29,23 @@ body {
     border: 1px solid #EC7C0F;
     color: #fff;
 }
+
+.btn--primary {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color) !important;
+    color: var(--white);
+    border-radius: 0px;
+    padding: 12px;
+}
+
+.btn--primary:hover {
+    background-color: #004370;
+    border: 1px solid #004370 !important;
+    color: var(--white);
+    border-radius: 0px;
+    padding: 12px;
+}
+
 
 .font-12 {
     font-size: 12px;
@@ -62,6 +79,15 @@ body {
 }
 
 /*DASHBOARD STYLES*/
+
+.card--dashboard {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-sizing: border-box;
+    box-shadow: -5px 5px 25px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding-top: 15px;
+}
 
 .top_nav {
     position: fixed;
@@ -107,8 +133,6 @@ body {
     font-weight: 500;
 }
 
-
-
 .calculator .compare--price {
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color) !important;
@@ -127,6 +151,14 @@ body {
 .calculator .get--started {
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color) !important;
+    color: var(--white);
+    border-radius: 0px;
+    padding: 12px;
+}
+
+.calculator .get--started:hover {
+    background-color: #004370;
+    border: 1px solid #004370 !important;
     color: var(--white);
     border-radius: 0px;
     padding: 12px;
@@ -416,6 +448,10 @@ CONTENT STYLE
 
 .very-small {
     font-size: 9px;
+}
+
+.modal__form input.form-control {
+    height: 48px;
 }
 
 
