@@ -150,10 +150,10 @@
                 </div>
 
                 <div class="row mx-md-2 mb-5">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
+                        <div class="calculator">
+                            <p class="conversion__title">Send Money</p>
 
-
-                        <div class="calculator pt-5">
                             <form>
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
@@ -180,24 +180,61 @@
                                         <option value="GBP">GBP</option>
                                     </select>
                                 </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-6 my-3">
+                                        <p class="fees mb-3">Fees:  <span>5.73 GBP</span></p>
+                                        <p class="conversion__title mb-0">Amount we’ll convert</p>
+                                    </div>
+
+                                    <div class="col-lg-6 my-3">
+                                        <p class="conversion text-lg-right mb-0">994.27 GBP</p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12 my-3">
+                                        <button class="btn get--started btn-block">Send</button>
+                                    </div>
+                                </div>
                             </form>
+                        </div>
+                    </div>
 
-                            <div class="row">
-                                <div class="col-lg-6 my-3">
-                                    <p class="fees mb-3">Fees:  <span>5.73 GBP</span></p>
-                                    <p class="conversion__title mb-0">Amount we’ll convert</p>
+                    <div class="col-md-5 offset-lg-1">
+                        <div class="calculator top-up">
+                            <p class="conversion__title">Airtime Top-Up</p>
+
+                            <form>
+                                <div class="input-group mb-3">
+                                    <select class="form-control" id="sender_currency">
+                                        <option selected>Select Network Provider</option>
+                                        <option>Airtel</option>
+                                    </select>
                                 </div>
 
-                                <div class="col-lg-6 my-3">
-                                    <p class="conversion text-lg-right mb-0">994.27 GBP</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend w-100">
+                                        <label for="mobile">Mobile Number</label>
+                                        <input type="tel" class="form-control"  pattern="[0-9]{11,11}" title="Enter a valid mobile number"   id="mobile" maxlength="12">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="col-lg-12 my-3">
-                                    <button class="btn get--started btn-block">Send</button>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend w-100">
+                                        <label for="amount">Top-Up Amount</label>
+                                        <input type="number" class="form-control" id="amount" placeholder="">
+                                    </div>
                                 </div>
-                            </div>
+
+
+                                <div class="row">
+                                    <div class="col-lg-12 my-3">
+                                        <button class="btn btn--orange btn-block rounded-0">Top Up Airtime</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -340,6 +377,7 @@
 
         <script src="js/jquery.dataTables.min.js"></script>
         <script src="js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/numeral.min.js"></script>
         <script src="js/dashboard.js"></script>
 
         <script>
