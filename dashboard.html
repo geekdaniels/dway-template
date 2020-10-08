@@ -208,7 +208,7 @@
 
                             <form>
                                 <div class="input-group mb-3">
-                                    <select class="form-control" id="sender_currency">
+                                    <select class="form-control" id="sender_currency" required>
                                         <option selected>Select Network Provider</option>
                                         <option>Airtel</option>
                                     </select>
@@ -217,14 +217,14 @@
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend w-100">
                                         <label for="mobile">Mobile Number</label>
-                                        <input type="tel" class="form-control"  pattern="[0-9]{11,11}" title="Enter a valid mobile number"   id="mobile" maxlength="12">
+                                        <input type="tel" class="form-control"  pattern="[0-9]{11,11}" title="Enter a valid mobile number"   id="mobile" maxlength="12" required>
                                     </div>
                                 </div>
 
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend w-100">
                                         <label for="amount">Top-Up Amount</label>
-                                        <input type="number" class="form-control" id="amount" placeholder="">
+                                        <input type="number" class="form-control" id="amount" placeholder="" required>
                                     </div>
                                 </div>
 
