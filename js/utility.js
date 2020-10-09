@@ -46,7 +46,6 @@ $('.upload_doc').change(function(e){
     var fileName = e.target.files[0].name;
     //    $('#passport_file_name').val(fileName);
     e.target.parentElement.previousElementSibling.children[0].value = fileName;
-    console.log(e);
 });
 
 
@@ -128,8 +127,6 @@ $input.on('keydown', function () {
 
 //user is "finished typing," do something
 function doneTyping (e) {
-    console.log(e.currentTarget.value);
-    console.log('hi');
     var receiverCurrency = $("#receiver_currency").val();
     var senderCurrency = $("#sender_currency").val();
 
@@ -164,7 +161,6 @@ function doneTyping (e) {
 
 
 function convert(from, to , amount) {
-    console.log(from,to,amount)
     var currVal = $("#receiver_value");
     currVal.val("");
 
@@ -173,7 +169,7 @@ function convert(from, to , amount) {
     currVal.attr("placeholder", "Converting...");
     $.getJSON(`data.json`,
               function(data){
-        console.log(data);
+
         try {
             var currencyAmount = parseFloat(amount);
             currVal.val(numeral(currencyAmount * data.sourceExchangeRate).format("0,0.00[0]"));
