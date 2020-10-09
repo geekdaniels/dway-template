@@ -86,7 +86,8 @@ if (hamburgers.length > 0) {
 apiKey = 'd884e934364c264fa566';
 
 //Set defaults
-
+fees = $('#fees');
+conversion = $('#conversion');
 defaultAmount = $('#sender_value').val();
 defaultFrom = $("#sender_currency").val();
 defaultTo = $("#receiver_currency").val();
@@ -136,6 +137,31 @@ function doneTyping (e) {
 
     convert(senderCurrency,receiverCurrency,amount);
 }
+//
+//function convert(from, to , amount) {
+//    console.log(from,to,amount)
+//    var currVal = $("#receiver_value");
+//    currVal.val("");
+//
+//    var query = from + "_" + to;
+//
+//    currVal.attr("placeholder", "Converting...");
+//    $.getJSON(`https://free.currconv.com/api/v7/convert?q=${query}&compact=y&apiKey=${apiKey}&callback=?`,
+//              function(data){
+//        console.log(data);
+//        try {
+//            var currencyAmount = parseFloat(amount);
+//            currVal.val(numeral(currencyAmount * data[query].val).format("0,0.00[0]"));
+//        } catch (e) {
+//            alert("Please enter a number in the Amount field.");
+//        }
+//
+//        currVal.attr("placeholder", "Press Convert button");
+//    });
+//}
+//
+//convert(defaultFrom, defaultTo , defaultAmount);
+
 
 function convert(from, to , amount) {
     console.log(from,to,amount)
@@ -145,20 +171,26 @@ function convert(from, to , amount) {
     var query = from + "_" + to;
 
     currVal.attr("placeholder", "Converting...");
-    $.getJSON(`https://free.currconv.com/api/v7/convert?q=${query}&compact=y&apiKey=${apiKey}&callback=?`,
+    $.getJSON(`data.json`,
               function(data){
         console.log(data);
         try {
             var currencyAmount = parseFloat(amount);
-            currVal.val(numeral(currencyAmount * data[query].val).format("0,0.00[0]"));
+            currVal.val(numeral(currencyAmount * data.sourceExchangeRate).format("0,0.00[0]"));
+            fees.text(currencyAmount * data.interest);
+            conversion.text(currencyAmount * data.dwayExchangeRate);
         } catch (e) {
             alert("Please enter a number in the Amount field.");
         }
 
         currVal.attr("placeholder", "Press Convert button");
+
     });
 }
 
-convert(defaultFrom, defaultTo , defaultAmount);
+//convert(defaultFrom, defaultTo , defaultAmount);
+
+
+
 
 
