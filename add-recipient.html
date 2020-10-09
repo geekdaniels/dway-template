@@ -7,7 +7,7 @@
         <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
         <meta name="description" content="DavtonLearn">
         <meta name="author" content="">
-        <title>Recipient Detail | DWAY - REMIT</title>
+        <title>Add Recipient | DWAY - REMIT</title>
         <!--favicicon-->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
@@ -79,7 +79,7 @@
                     <p class="text-dark text-left ml-4 font-35">Hi John</p>
 
                     <div class="text-left">
-                        <a href="send-money.html" class="btn rounded-0 btn--orange ml-4 mb-3 px-4">Send Money</a>
+                        <button class="btn rounded-0 btn--orange ml-4 mb-3 px-4">Send Money</button>
                     </div>
                     <li class="">
                         <a href="dashboard.html">
@@ -95,7 +95,7 @@
                         </a>
                     </li>
 
-                    <li class="active">
+                    <li>
                         <a href="recipients.html">
                             <img src="img/user.png" alt="Recipients" class="mb-1 mr-3 img-fluid" width="20" /> Recipients
                         </a>
@@ -109,19 +109,17 @@
 
                     <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
 
-                    <li>
+                    <li class="active">
                         <a href="settings.html">
                             <img src="img/settings.png" alt="Blog" class="mb-1 mr-3 img-fluid" width="20" /> Settings
                         </a>
                     </li>
 
-                    <!--
-<li>
-<a href="#">
-<img src="img/power-button.png" alt="Blog" class="mb-1 mr-3 img-fluid" width="20" /> Log Out
-</a>
-</li>
--->
+                    <li>
+                        <a href="#">
+                            <img src="img/power-button.png" alt="Blog" class="mb-1 mr-3 img-fluid" width="20" /> Log Out
+                        </a>
+                    </li>
                 </ul>
 
 
@@ -145,102 +143,63 @@
                     <div class="col-md-12">
                         <div class="d-flex flex-column flex-lg-row my-2">
                             <div class="col px-0">
-                                <p class="text-blue text-uppercase font-13"> <a href="transactions.html">Transactions</a> / John Doe's Transactions</p>
+                                <p class="text-blue text-uppercase font-13"><a href="recipients.html">Recipients</a> / Add Recipient</p>
                             </div>
                         </div>
 
-                        <div class="card--dashboard">
-                            <div class="">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <p class="mb-0 font-13 text-muted">Account holder name</p>
-                                            <p class="">John Doe</p>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <p class="mb-0 font-13 text-muted">Bank Name</p>
-                                            <p class="">First Bank</p>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <p class="mb-0 font-13 text-muted">Account number</p>
-                                            <p class="">5BATI1850081082057</p>
-                                        </div>
-                                    </div>
+                        <div class="card--dashboard pt-0">
+
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-3 weight-semi-bold">Add Recipient</h5>
                                 </div>
                             </div>
-                        </div>
+                            <form class="">
+                                <div class="row mx-md-2">
 
-                        <hr>
+                                    <div class="col-md-8 my-3">
 
-                        <div class="card--dashboard">
-                            <div class="table-responsive mb-3">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="bank_account_number">Bank Account Number</label>
+                                                <input type="email" class="form-control" id="bank_account_number" required>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label for="bank_name">Bank Name</label>
+                                                <input type="text" class="form-control" id="bank_name" required>
+                                            </div>
+                                        </div>
 
-                                <table id="dataTable1" width="100%" class="table table-striped table-lightfont">
-                                    <thead>
-                                        <tr>
-                                            <th>Transaction Date</th>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="name">Full Name</label>
+                                                <input type="text" class="form-control" id="name" disabled>
+                                            </div>
+                                        </div>
 
-                                            <th>Bank Name</th>
-                                            <th>Account Number</th>
-                                            <th>Amount Sent</th>
-                                            <th>Amount Received</th>
-                                            <th>Transaction Number</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>Transaction Date</th>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="mobile_number">Mobile Number</label>
+                                                <input type="text" class="form-control" id="mobile_number" required>
+                                            </div>
 
-                                            <th>Bank Name</th>
-                                            <th>Account Number</th>
-                                            <th>Amount Sent</th>
-                                            <th>Amount Received</th>
-                                            <th>Transaction Number</th>
-                                            <th>Status</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-                                        <tr>
-                                            <td>2019-02-28</td>
+                                            <div class="form-group col-md-6">
+                                                <label for="email">Email Address</label>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
 
-                                            <td>Guaranty Trust Bank </td>
-                                            <td>1440585774</td>
-                                            <td>₦150,000,000</td>
-                                            <td>₦0</td>
-                                            <td>5998295785f5b7</td>
-                                            <td class="text-danger">
-                                                <button class="btn btn-sm btn-danger" disabled>Failed</button>
-                                            </td>
-                                        </tr>
+                                        <div class="form-row mt-3">
+                                            <div class="col-md-7">
+                                                <button class="btn btn--primary font-14 my-2 md-btn-block">Update Changes</button>
+                                            </div>
+                                        </div>
 
-                                        <tr>
-                                            <td>2019-02-28</td>
-                                            <td>Guaranty Trust Bank </td>
-                                            <td>1440585774</td>
-                                            <td>₦150,000,000</td>
-                                            <td>₦0</td>
-                                            <td>5998295785f5b7</td>
-                                            <td class="text-danger">
-                                                <button class="btn btn-sm btn-warning" disabled>Pending</button>
-                                            </td>
-                                        </tr>
+                                    </div>
 
-                                        <tr>
-                                            <td>2019-03-28</td>
-                                            <td>Guaranty Trust Bank </td>
-                                            <td>1440585774</td>
-                                            <td>₦200,000</td>
-                                            <td>₦0</td>
-                                            <td>5985295785f5b7</td>
-                                            <td class="text-success">
-                                                <button class="btn btn-sm btn-success px-3" disabled>Successful</button>
-                                            </td>
+                                </div>
+                            </form>
 
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
 
                     </div>
@@ -299,11 +258,7 @@
         <script src="js/dataTables.bootstrap4.min.js"></script>
         <script src="js/dashboard.js"></script>
 
-        <script>
-            var table = $('#dataTable1').DataTable({
-                buttons: ['copy', 'excel', 'pdf']
-            });
-        </script>
+
 
     </body>
 

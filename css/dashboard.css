@@ -468,7 +468,6 @@ CONTENT STYLE
 .settings-card {
     border: 1.3px solid rgba(130, 130, 130, 0.3);
     box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
     border-radius: 0px 10px;
     height: 100px;
     align-content: center;
@@ -498,6 +497,29 @@ CONTENT STYLE
     position: relative;
     overflow: hidden;
     display: inline-block;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.dash--stat {
+    border: 1.3px solid rgba(130, 130, 130, 0.3);
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0 15px;
+    padding: 15px;
+}
+
+.dash--stat .divider {
+    background-color: var(--primary-color);
+    height: 4px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.dash--stat h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
 }
 
 /*DASHBOARD STYLES END*/
