@@ -255,7 +255,7 @@ nav .logout:hover {
 }
 
 .banner--content nav .nav-link {
-	color: #fff !important;
+	/*	color: #fff !important;*/
 }
 
 .banner--content .fixed-top {
@@ -265,7 +265,7 @@ nav .logout:hover {
 }
 
 .banner--content .fixed-top .nav-link {
-	color: #004370 !important;
+	color: #004370 !imporant;
 }
 
 .banner::before { content: ""; display: block; position: absolute; margin-left: 0; min-width: 100%; min-height: 100vh; z-index: 5; background-color: rgba(0, 113, 188, 0.9);}

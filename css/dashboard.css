@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0071BC;
-    --dashboard-nav: linear-gradient(90deg, #004370 55.42%, #0071BC 100%);
+    --dashboard-nav: #fff;
     --sidebar-hover: #F8F8F8;
     --primary-background: #fff;
 }
@@ -94,7 +94,7 @@ body {
 .top_nav {
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 5;
 }
 
 
@@ -310,7 +310,7 @@ SIDEBAR STYLE
 #sidebar {
     width: 250px;
     position: fixed;
-    margin-top: 58px;
+    margin-top: 70px;
     top: 0;
     left: 0;
     height: 90vh;
@@ -321,7 +321,7 @@ SIDEBAR STYLE
     color: #000;
     transition: all 0.3s;
     overflow-y: auto;
-    box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.08);
+/*    box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.08);*/
 }
 
 #sidebar.active {
@@ -535,7 +535,7 @@ MEDIAQUERIES
         max-width: 80px;
         text-align: center;
         margin-left: -80px !important;
-        height: auto;
+        height: 100%;
     }
 
     .dropdown-toggle::after {
