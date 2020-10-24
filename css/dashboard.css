@@ -1,6 +1,6 @@
 :root {
     --primary-color: #0071BC;
-    --dashboard-nav: #fff;
+    --dashboard-nav: linear-gradient(90deg, #004370 55.42%, #0071BC 100%);
     --sidebar-hover: #F8F8F8;
     --primary-background: #fff;
 }
@@ -321,7 +321,7 @@ SIDEBAR STYLE
     color: #000;
     transition: all 0.3s;
     overflow-y: auto;
-/*    box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.08);*/
+    /*    box-shadow: 5px -5px 7px rgba(0, 0, 0, 0.08);*/
 }
 
 #sidebar.active {
@@ -508,6 +508,7 @@ CONTENT STYLE
     box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.05);
     border-radius: 0 15px;
     padding: 15px;
+    background-color: #fff;
 }
 
 .dash--stat .divider {
