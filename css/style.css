@@ -520,6 +520,57 @@ nav .logout:hover {
 	color: #fff;
 }
 
+.is-parent {
+	display: flex;
+	padding: 25px 0 5px;
+	justify-content: space-between;
+}
+
+.tile .title {
+	font-weight: 600;
+}
+
+.list-item figure {
+	flex: 0.25;
+	display: flex;
+	align-items: center;
+}
+
+.list-item .is-child:nth-child(2) {
+	padding: 0 30px;
+}
+
+.list-item .is-child:nth-child(3) {
+	justify-content: flex-end !important;
+}
+
+.review-card {
+	border: 1px dashed #e2e6e8;
+}
+
+.dl-horizontal-item {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.dl-horizontal-item dt {
+	flex: 1 2 auto;
+	font-weight: 300;
+	font-size: 13px;
+}
+
+
+.dl-horizontal-item dd {
+	flex: 1 1 auto;
+	text-align: right;
+	word-break: break-all;
+}
+
+.transfer-details p {
+	font-size: 13px;
+}
+
+
 @media (min-width:320px) and (max-width:720px) {
 	.auth__wrapper {
 		padding: 1em;
