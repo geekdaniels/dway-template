@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Complete Profile - D-Way Remit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="CIIANG" />
+
+        <!--favicicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/countrySelect.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid kyc_nav">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-lg-0">
+
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" width="160" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link logout btn px-5" href="#">Logout</a>
+                        </li>
+
+                        <li class="nav-item mx-3">
+                            <a class="nav-link" href="#">
+                                <span><svg width="27" height="20" viewBox="0 0 47 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M29.65 45C29.2105 45.7577 28.5796 46.3866 27.8206 46.8238C27.0615 47.261 26.2009 47.4911 25.325 47.4911C24.4491 47.4911 23.5885 47.261 22.8294 46.8238C22.0704 46.3866 21.4395 45.7577 21 45M38.5 16C38.5 12.0218 36.9197 8.20644 34.1066 5.3934C31.2936 2.58035 27.4782 1 23.5 1C19.5218 1 15.7064 2.58035 12.8934 5.3934C10.0804 8.20644 8.5 12.0218 8.5 16C8.5 33.5 1 38.5 1 38.5H46C46 38.5 38.5 33.5 38.5 16Z" stroke="#0071BC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item mx-3">
+                            <img src="https://source.unsplash.com/500x400/?african,people" class="img-fluid rounded-circle" alt="" width="50">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="kyc">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 kyc--bg d-none d-lg-block pt-4">
+
+                        <p>Tips</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.</p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="progess my-3">
+                            <div class="pl-lg-5">
+                                <p class="tab1">Step 1 :  Personal Information</p>
+                                <p class="tab2">Step 2 :  KYC Verfiication</p>
+                            </div>
+
+                            <div class="progress__status">
+                                <div class="stage"></div>
+                            </div>
+                        </div>
+
+                        <div class="kyc--wrapper">
+
+                            <p class="">Help us with your personal information to build your profile</p>
+
+                            <form class="" action="" method="get" id="individual_form">
+
+                                <div class="tab1">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control rounded-0" id="fname" name="fname" placeholder="First Name" autofocus autocomplete="given-name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control rounded-0" id="mname" name="mname" placeholder="Middle Name" autocomplete="additional-name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control rounded-0" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-row my-3">
+                                        <div class="form-group col-md-6">
+                                            <input type="email" class="form-control rounded-0" name="email" id="email" placeholder="Enter email" autocomplete="email">
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <input type="tel" class="form-control rounded-0" name="phone" id="phone" name="phone" placeholder="Mobile Number" autocomplete="mobile">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row my-3">
+                                        <div class="form-group col-md-6">
+                                            <input type="date" class="form-control rounded-0" name="date_of_birth" id="date_of_birth" placeholder="DOB (DD/MM/YYYY)">
+                                        </div>
+
+                                        <div class="form-group col-md-6">
+                                            <input type="text" class="form-control rounded-0 country" name="nationality" id="nationality" placeholder="Nationality">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group my-3">
+                                        <textarea type="text" class="form-control rounded-0" name="residential_adress" id="residential_adress" placeholder="Residential Adress"></textarea>
+                                    </div>
+
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-primary my-4 rounded-0 next px-4">Continue</button>
+                                    </div>
+                                </div>
+
+                                <div class="tab2">
+                                    <div class="verification__tab py-3 d-flex my-4 align-center">
+                                        <div class="col-3">
+                                            <img src="img/verify_email.jpg" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-9">
+                                            <p class="mb-1 title">Email Address</p>
+                                            <p class="description">balogun.abbey28@gmail.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="verification__tab py-3 d-flex my-4">
+                                        <div class="col-3">
+                                            <img src="img/verify_phone.jpg" class="img-fluid" alt="">
+                                        </div>
+
+                                        <div class="col-9">
+                                            <p class="mb-1 title">Verify Mobile Number</p>
+                                            <p class="description">+2348162832467</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <button type="button" class="btn my-4 rounded-0 back px-4">Back</button>
+                                        <button type="button" class="btn my-4 rounded-0 ml-auto next px-4">Continue</button>
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="js/countrySelect.min.js"></script>
+    <script src="js/utility.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            if($("#individual_form").length){
+
+                $(".next").click(function(){
+
+                    var form = $("#individual_form");
+                    form.validate({
+                        errorElement: 'span',
+                        errorClass: 'help-block text-danger small',
+                        highlight: function(element, errorClass, validClass) {
+                            $(element).closest('.form-group').addClass("has-error");
+                            $(element).addClass("is-invalid");
+                        },
+                        unhighlight: function(element, errorClass, validClass) {
+                            $(element).closest('.form-group').removeClass("has-error");
+                            $(element).removeClass("is-invalid");
+                            $(element).addClass("is-valid");
+                        },
+                        rules: {
+                            fname:{
+                                required: true
+                            },
+                            mname: {
+                                required: true,
+                            },lname: {
+                                required: true,
+                            },email:{
+                                required: true
+                            },phone:{
+                                required: true
+                            },address:{
+                                required: true
+                            },nationality:{
+                                required: true
+                            },date_of_birth:{
+                                required: true
+                            },residential_adress:{
+                                required: true
+                            },
+                        },
+                        messages: {
+
+                        }
+                    });
+
+                    if (form.valid() === true){
+                        if ($('.tab1').is(":visible")){
+                            current_fs = $('.tab1');
+                            next_fs = $('.tab2');
+                            $('.stage').css("width", "100%");
+                        }
+                        next_fs.show();
+                        current_fs.hide();
+                    }
+                });
+
+                $('.back').click(function(){
+                    if($('.tab2').is(":visible")){
+                        current_fs = $('.tab2');
+                        next_fs = $('.tab1');
+                        $('.stage').css("width", "50%");
+                    }
+
+                    next_fs.show();
+                    current_fs.hide();
+                });
+            }
+        });
+    </script>
+</html>

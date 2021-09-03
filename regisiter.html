@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Register - D-Way Remit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="CIIANG" />
+
+        <!--favicicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/countrySelect.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="auth">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 auth--bg d-none d-lg-block">
+                        <img src="img/logo.png" class="img-fluid my-3" alt="dway-remit" title="dway-remit" width="160">
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="auth__wrapper">
+                            <div class="">
+                                <img src="img/logo.png" class="img-fluid my-3" alt="dway-remit" title="dway-remit" width="160">
+                            </div>
+
+                            <h3 class="mb-4">Enjoy Low Cost, Fast Money Transfers</h3>
+                            <p class="">Already have an account? <a href="login.html">Sign in here</a></p>
+
+                            <div class="toggle_wrapper d-flex position-relative mb-4">
+                                <div class="p-2 col-6 active_state text-center" id="individual">Individual</div>
+                                <div class="p-2 col-6 text-center" id="business">Business</div>
+
+                                <span style="position: absolute; top: 5px; left: 45%">
+                                    <svg width="40" height="32" viewBox="0 0 74 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1.30591" y="0.5" width="71.8155" height="31" rx="15.5" fill="white" stroke="#0071BC"/>
+                                        <path d="M34.0798 16.84C34.0798 17.9133 33.9098 18.9 33.5698 19.8C33.2298 20.6933 32.7498 21.4633 32.1298 22.11C31.5098 22.7567 30.7631 23.26 29.8898 23.62C29.0231 23.9733 28.0631 24.15 27.0098 24.15C25.9564 24.15 24.9964 23.9733 24.1298 23.62C23.2631 23.26 22.5198 22.7567 21.8998 22.11C21.2798 21.4633 20.7998 20.6933 20.4598 19.8C20.1198 18.9 19.9498 17.9133 19.9498 16.84C19.9498 15.7667 20.1198 14.7833 20.4598 13.89C20.7998 12.99 21.2798 12.2167 21.8998 11.57C22.5198 10.9167 23.2631 10.41 24.1298 10.05C24.9964 9.69 25.9564 9.51 27.0098 9.51C28.0631 9.51 29.0231 9.69 29.8898 10.05C30.7631 10.41 31.5098 10.9167 32.1298 11.57C32.7498 12.2167 33.2298 12.99 33.5698 13.89C33.9098 14.7833 34.0798 15.7667 34.0798 16.84ZM32.0898 16.84C32.0898 15.96 31.9698 15.17 31.7298 14.47C31.4898 13.77 31.1498 13.18 30.7098 12.7C30.2698 12.2133 29.7364 11.84 29.1098 11.58C28.4831 11.32 27.7831 11.19 27.0098 11.19C26.2431 11.19 25.5464 11.32 24.9198 11.58C24.2931 11.84 23.7564 12.2133 23.3098 12.7C22.8698 13.18 22.5298 13.77 22.2898 14.47C22.0498 15.17 21.9298 15.96 21.9298 16.84C21.9298 17.72 22.0498 18.51 22.2898 19.21C22.5298 19.9033 22.8698 20.4933 23.3098 20.98C23.7564 21.46 24.2931 21.83 24.9198 22.09C25.5464 22.3433 26.2431 22.47 27.0098 22.47C27.7831 22.47 28.4831 22.3433 29.1098 22.09C29.7364 21.83 30.2698 21.46 30.7098 20.98C31.1498 20.4933 31.4898 19.9033 31.7298 19.21C31.9698 18.51 32.0898 17.72 32.0898 16.84ZM42.8254 16.61C43.3854 16.61 43.8787 16.5433 44.3054 16.41C44.7387 16.27 45.0987 16.0767 45.3854 15.83C45.6787 15.5767 45.8987 15.2767 46.0454 14.93C46.1921 14.5833 46.2654 14.2 46.2654 13.78C46.2654 12.9267 45.9854 12.2833 45.4254 11.85C44.8654 11.4167 44.0254 11.2 42.9054 11.2H40.7854V16.61H42.8254ZM49.4454 24H47.7254C47.3721 24 47.1121 23.8633 46.9454 23.59L43.2254 18.47C43.1121 18.31 42.9887 18.1967 42.8554 18.13C42.7287 18.0567 42.5287 18.02 42.2554 18.02H40.7854V24H38.8554V9.67H42.9054C43.8121 9.67 44.5954 9.76333 45.2554 9.95C45.9154 10.13 46.4587 10.3933 46.8854 10.74C47.3187 11.0867 47.6387 11.5067 47.8454 12C48.0521 12.4867 48.1554 13.0333 48.1554 13.64C48.1554 14.1467 48.0754 14.62 47.9154 15.06C47.7554 15.5 47.5221 15.8967 47.2154 16.25C46.9154 16.5967 46.5454 16.8933 46.1054 17.14C45.6721 17.3867 45.1787 17.5733 44.6254 17.7C44.8721 17.84 45.0854 18.0433 45.2654 18.31L49.4454 24Z" fill="#8F92A1"/>
+                                    </svg>
+
+                                </span>
+                            </div>
+
+                            <!--Individual Registration-->
+                            <form class="" id="individual_wrapper" action="dashboard.html" method="get">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control rounded-0" id="fname" name="fname" placeholder="First Name" autofocus autocomplete="given-name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control rounded-0" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control rounded-0 country" name="country" id="country" placeholder="country">
+                                </div>  
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control rounded-0" id="email" placeholder="Enter email" autocomplete="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control rounded-0" id="password" placeholder="Password" autocomplete="current-password">
+                                </div>
+
+                                <div class="form-group">
+                                    <select type="text" class="custom-select rounded-0" name="medium" id="medium">
+                                        <option value="" disabled selected>How did you hear about us?</option>
+                                    </select>
+                                </div>  
+
+                                <button type="submit" class="btn btn-primary my-4 btn-block auth__submit">Create your account</button>
+
+                            </form>
+
+                            <!--Business Registration-->
+                            <form class="" id="business_wrapper" action="dashboard.html" method="get">
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control rounded-0" id="fname" name="fname" placeholder="First Name" autofocus autocomplete="given-name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control rounded-0" id="lname" name="lname" placeholder="Last Name" autocomplete="family-name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control rounded-0" name="business_name" id="business_name" placeholder="Business Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control rounded-0 country" name="country_of_registration" id="country_of_registration" placeholder="Country of Registration">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="email" class="form-control rounded-0" id="email" placeholder="Enter email" autocomplete="email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control rounded-0" id="password" placeholder="Password" autocomplete="current-password">
+                                </div>
+
+                                <div class="form-group">
+                                    <select type="text" class="custom-select rounded-0" name="medium" id="medium">
+                                        <option value="" disabled selected>How did you hear about us?</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary my-4 btn-block auth__submit">Create your account</button>
+                            </form>
+
+
+                            <p class="terms">By continuing you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+
+                            <p class="text-center mb-0">OR</p>
+
+                            <p class="text-center mb-1">Sign in with</p>
+
+                            <div class="text-center">
+                                <button class="btn auth__social my-3 mx-3">
+                                    <img src="img/google.png" class="img-fluid" alt="" width="30">
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="js/countrySelect.min.js"></script>
+    <script src="js/utility.js"></script>
+</html>

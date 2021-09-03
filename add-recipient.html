@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />-->
+        <meta name="description" content="DavtonLearn">
+        <meta name="author" content="">
+        <title>Add Recipient | DWAY - REMIT</title>
+        <!--favicicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="css/dashboard.css">
+
+        <!-- Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+
+    </head>
+
+    <body class="dashboard-body">
+
+        <div class="top_nav">
+
+            <div class="container-fluid dashboard_nav py-0">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand py-0" href="#"><img src="img/dashboard_logo.png" class="" alt="Dremit logo" width="50" /></a>
+                    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item px-md-1">
+                                <a class="nav-link text-dark" href="#" data-target="#notifications" data-toggle="modal">
+                                    <img src="img/notification.svg" alt="user name" class="" width="18">
+                                </a>
+                            </li>
+
+                            <li class="nav-item dropdown pr-md-4 pl-2">
+                                <a class="nav-link text-light dropdown-toggle" href="#" id="userMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Hr247@asanta.com
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
+                                    <a class="dropdown-item font-12" href="#">Log Out</a>
+                                    <a class="dropdown-item font-12" href="settings.html">Setting</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar" class="">
+                <div class="sidebar-header">
+                    <button type="button" id="sidebarCollapse-1" class="btn bg-trans d-none">
+                        <img src="img/hamburger.svg" />
+                    </button>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <p class="text-dark text-left ml-4 font-35">Hi John</p>
+
+                    <div class="text-left">
+                        <button class="btn rounded-0 btn--orange ml-4 mb-3 px-4">Send Money</button>
+                    </div>
+                    <li class="">
+                        <a href="dashboard.html">
+                            <img src="img/dashboard.png" alt="Dashboard" class="mb-1 mr-3 img-fluid" width="20" /> Dashboard
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Fund Management</p>
+
+                    <li>
+                        <a href="transactions.html">
+                            <img src="img/transactions.png" alt="Transactions" class="mb-1 mr-3 img-fluid" width="20" /> Transactions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="recipients.html">
+                            <img src="img/user.png" alt="Recipients" class="mb-1 mr-3 img-fluid" width="20" /> Recipients
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="refer.html">
+                            <img src="img/referral.png" alt="courses" class="mb-1 mr-3 img-fluid" width="20" /> Invite & Earn
+                        </a>
+                    </li>
+
+                    <p class="text-dull text-left ml-4 my-2 font-12">Account Management</p>
+
+                    <li class="active">
+                        <a href="settings.html">
+                            <img src="img/settings.png" alt="Blog" class="mb-1 mr-3 img-fluid" width="20" /> Settings
+                        </a>
+                    </li>
+
+                    <!--
+<li>
+<a href="#">
+<img src="img/power-button.png" alt="Blog" class="mb-1 mr-3 img-fluid" width="20" /> Log Out
+</a>
+</li>
+-->
+                </ul>
+
+
+            </nav>
+
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="dasboard-top-wrapper">
+
+                </div>
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light d-none display border">
+                    <div class="container-fluid">
+                        <button id="sidebarCollapse" class="btn bg-trans d-inline-block d-lg-none ml-auto" type="button">
+                            <i alt="menu" class="fas fa-align-justify text-consolidated"></i>
+                        </button>
+                    </div>
+                </nav>
+
+                <div class="row mx-md-2 my-5">
+                    <div class="col-md-12">
+                        <div class="d-flex flex-column flex-lg-row my-2">
+                            <div class="col px-0">
+                                <p class="text-blue text-uppercase font-13"><a href="recipients.html">Recipients</a> / Add Recipient</p>
+                            </div>
+                        </div>
+
+                        <div class="card--dashboard pt-0">
+
+                            <div class="d-flex border-bottom">
+                                <div class="col px-4">
+                                    <h5 class="text-grey my-3 weight-semi-bold">Add Recipient</h5>
+                                </div>
+                            </div>
+                            <form class="px-3 px-lg-0">
+                                <div class="row mx-md-2">
+
+                                    <div class="col-md-8 my-3">
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="bank_account_number">Bank Account Number</label>
+                                                <input type="email" class="form-control" id="bank_account_number" required>
+                                            </div>
+                                            <div class="form-group col-md-12">
+                                                <label for="bank_name">Bank Name</label>
+                                                <input type="text" class="form-control" id="bank_name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-12">
+                                                <label for="name">Full Name</label>
+                                                <input type="text" class="form-control" id="name" disabled>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                                <label for="mobile_number">Mobile Number</label>
+                                                <input type="text" class="form-control" id="mobile_number" required>
+                                            </div>
+
+                                            <div class="form-group col-md-6">
+                                                <label for="email">Email Address</label>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-row mt-3">
+                                            <div class="col-md-7">
+                                                <button class="btn btn--primary font-14 my-2 md-btn-block">Update Changes</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Notification Modal-->
+                <div  aria-hidden="true" class="onboarding-modal modal fade animated" id="notifications" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-right" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title text-left text-green">Notifications</h6>
+                                <button   class="close pr-3 ml-0" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true"><img src="img/modal_cancel.svg" alt="close modal" /></span> </button>
+                            </div>
+
+                            <div class="onboarding-content with-radient px-3 pt-3">
+
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img src="img/notify.png" alt="notify" />
+                                    </div>
+
+                                    <div class="col-lg-9">
+                                        <p class="font-weight-500 mb-1">Dui nulla id massa turpis.</p>
+                                        <p class="font-13 mb-2">Gravida odio id commodo libero, aliquam. Tempus bibendum vestibulum aliquet morbi amet.</p>
+                                        <p class="font-12"><img class="img-fluid mr-2" src="img/notification_time.png" alt="Time received 20 mins ago"/>20 mins ago</p>
+                                    </div>
+                                </div>
+                                <hr class="mb-3 mt-0" />
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img src="img/notify.png" alt="notify" />
+                                    </div>
+
+                                    <div class="col-lg-9">
+                                        <p class="font-weight-500 mb-1">Dui nulla id massa turpis.</p>
+                                        <p class="font-13 mb-2">Gravida odio id commodo libero, aliquam. Tempus bibendum vestibulum aliquet morbi amet.</p>
+                                        <p class="font-12"><img class="img-fluid mr-2" src="img/notification_time.png" alt="Time received 20 mins ago"/>20 mins ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/dashboard.js"></script>
+
+
+
+    </body>
+
+</html>

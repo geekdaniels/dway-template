@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>D-Way Remit | International Money Transfer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="CIIANG" />
+
+		<!--favicicon-->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+		<link rel="manifest" href="img/favicon_io/site.webmanifest">
+
+		<meta property="og:image" content="/img/social-image.jpg" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+
+		<meta name="twitter:image" content="/img/social-image.jpg" />
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/countrySelect.min.css">
+		<link rel="stylesheet" href="css/hamburgers.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="banner">
+			<div class="banner--bg">
+			</div>
+
+			<div class="banner--content pb-5">
+				<nav class="navbar active_nav navbar-expand-lg navbar-light bg-white py-md-0">
+					<div class="container">
+						<a class="navbar-brand" href="index.html"><img loading="lazy" src="img/logo.png" alt="dway remit Logo" class="img-fluid" width="170"></a>
+						<button
+								class="hamburger hamburger--emphatic navbar-toggler"
+								type="button"
+								data-toggle="collapse"
+								data-target="#navbarNav"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+								>
+							<span class="hamburger-box">
+								<span class="hamburger-inner"></span>
+							</span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ml-auto landing-page">
+								<li class="nav-item mx-md-4 my-md-0 postion-relative">
+									<a class="nav-link px-0 active" href="#">Send Money</a>
+								</li>
+
+								<li class="nav-item mx-md-4 my-md-0 postion-relative">
+									<a class="nav-link px-0 active" href="about-us.html">About Us</a>
+								</li>
+
+								<li class="nav-item mx-md-4 my-md-0 postion-relative">
+									<a class="nav-link px-0 active" href="login.html">Sign in</a>
+								</li>
+
+								<li class="nav-item mx-md-4 my-md-0 postion-relative">
+									<a class="nav-link px-0 button px-4 text-white" href="regisiter.html">Get Started</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<div class="container mt-lg-5 pt-lg-5">
+					<div class="row align-center">
+						<div class="col-lg-6 mb-5">
+							<h6 class="sub-title mt-4">-Make your online payment easier & comfortable</h6>
+							<h1 class="my-4 font-weight-bold">The Secure,<br>
+								Easiest and Fastest <br>
+								way to transfer money.</h1>
+
+							<p>Join over 8 million people who get the real exchange rate
+								with TransferWise. We’re on average 8x cheaper</p>
+
+							<button class="btn px-5 mt-3 learn-more">Learn more</button>
+						</div>
+
+						<div class="col-lg-5 offset-lg-1">
+							<img src="img/logo_icon_pattern.png" class="img-fluid d-none d-lg-block position-absolute" style="top: -220px; right: -210px; z-index: -1" alt="">
+							<div class="calculator pt-5">
+								<form>
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label for="sender_value">You Send</label>
+											<input type="text" class="form-control input" id="sender_value" name="sender_value" placeholder="" value="0">
+										</div>
+										<select class="custom-select" id="sender_currency">
+											<option selected  value="GBP">GBP</option>
+											<option  value="USD">USD</option>
+											<option value="EUR">EUR</option>
+											<option value="AUD">AUD</option>
+										</select>
+									</div>
+
+									<div class="row">
+										<div class="col-lg-6 my-2">
+											<p class="fees mb-3">Fees:  </p>
+											<p class="conversion__title mb-0">Amount we’ll convert</p>
+											<p class="fees mt-3 mb-0">Rate:  </p>
+
+										</div>
+
+										<div class="col-lg-6 my-">
+											<!--											<div class="transfer"><p class="py-1 mb-3">Low cost transfer</p></div>-->
+											<p class="fees mb-3 text-lg-right"><span id="fees">5.73 GBP</span></p>
+											<p class="conversion text-lg-right mb-0" id="conversion">994.27 GBP</p>
+											<p class="fees mt-3 mb-0 text-lg-right"><span id="rate">5.73 GBP</span></p>
+										</div>
+									</div>
+
+									<div class="input-group mb-3">
+										<div class="input-group-prepend">
+											<label for="receiver_value">Receipient gets</label>
+											<input type="text" class="form-control" disabled id="receiver_value" placeholder="">
+										</div>
+										<select class="custom-select" id="receiver_currency">
+											<option selected value="NGN">NGN</option>
+											<option  value="EUR">EUR</option>
+											<option  value="USD">USD</option>
+											<option value="GBP">GBP</option>
+										</select>
+									</div>
+								</form>
+
+
+
+								<div class="row">
+									<!--
+<div class="col-lg-6 my-3">
+<button class="btn compare--price btn-block">Compare Prices</button>
+</div>
+-->
+									<div class="col-lg-12 my-3">
+										<button class="btn get--started btn-block">Get Started</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="features py-5 my-5 position-relative">
+
+			<div class="container">
+				<div class="row justify-content-center">
+				    <div class="col-lg-8">
+				        <h1 class="text-center font-weight-bold my-4" style="line-height: 1.5em;">Use our 3-step guild to transfer money to friend and family</h1>
+				    </div>
+				</div>
+
+				<div class="row justify-content-center">
+
+					<div class="col-lg-4 my-3">
+						<div class="feature--card h-100 text-center">
+							<img src="img/fast_payment_icon.png" class="img-fluid mb-3" width="130" alt="Fast & Easy Transfers">
+							<h4 class="font-weight-bold">Create Your Transfer</h4>
+
+							<p class="my-3">Use the calculator to inform us how much you want to send or how much you would like your family and friends to receive.</p>
+						</div>
+					</div>
+
+
+					<div class="col-lg-4 my-3">
+						<div class="feature--card h-100 text-center">
+							<img src="img/secure_payment_icon.png" class="img-fluid my-3" width="130" alt="Trusted and secure">
+							<h4 class="font-weight-bold">KYC Compliance</h4>
+
+							<p class="my-3">Tell us about yourself and your recipient</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 my-3">
+						<div class="feature--card h-100 text-center">
+							<img src="img/low_cost_icon.png" class="img-fluid my-3" width="130" alt="Low Cost">
+							<h4 class="font-weight-bold">Fund Your Transfer</h4>
+
+							<p class="my-3">Make a payment by debit card or bank transfer to our bank account and your part is done. We keep your updated via email every step of the way.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<img src="img/app-section-bg.png" class="img-fluid position-absolute" alt="" style="top: 0; right: 0; z-index: 1" width="900">
+
+		</div>
+
+		<div class="benefit benefit__bg py-5">
+			<div class="container">
+				<div class="row align-center">
+					<div class="col-lg-6 text-right">
+						<img src="img/receive-money.png" class="img-fluid" alt="">
+					</div>
+
+					<div class="col-lg-6">
+						<h6 class="sub-topic">Receive Money</h6>
+						<h2>Receive Money in a Minute with Secure Way</h2>
+						<p>we guarantee the best rate always</p>
+
+						<p>Our vision is to make international money transfers cheap, fair, and simple. This is why we are creating the smartest way to send money internationally. </p>
+
+						<button class="btn">Receive Money</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="benefit py-5 d-none">
+			<div class="container">
+				<div class="row align-center">
+					<div class="col-lg-6">
+						<h6 class="sub-topic">Receive Money</h6>
+						<h2>Receive Money in a Minute with Secure Way</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. </p>
+
+						<button class="btn">Receive Money</button>
+					</div>
+					<div class="col-lg-6 text-center">
+						<img src="img/receive-money.png" class="img-fluid" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="position-relative py-5">
+			<div class="container">
+				<div class="row align-center">
+					<div class="col-lg-6">
+						<img src="img/app-image.png" class="img-fluid my-5" alt="">
+					</div>
+
+					<div class="col-lg-6">
+						<h2 class="mb-5">Get The App</h2>
+						<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit amet, consectetur adipisci.</p>-->
+
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="#"><img src="img/Play-Store.png" alt="Download on play store" class="img-fluid"></a>
+							</li>
+
+							<li class="list-inline-item">
+								<a href="#"><img src="img/ios-store.png" alt="download on ios store" class="img-fluid"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<img src="img/app-section-bg.png" class="img-fluid position-absolute" alt="" style="top: 0; right: 0;" width="900">
+		</div>
+
+		<div class="footer">
+			<div class="container">
+				<div class="row pt-lg-5">
+					<!-- /.quick links -widget -->
+					<div class="col-lg-4 col-sm-6 col-12 footer-list my-3" data-aos="fade-up">
+						<h5 class="footer__title text-uppercase">D-Way Remit</h5>
+						<ul class="list-unstyled">
+							<li class="mt-2 mb-5">Address: Unit 1.01, Astra House, 23-25 Arklow Rd, Deptford, London SE14 6EB, United Kingdom</li>
+							<li class="my-3"><a href="#">E-mail: info@dwayremit.com </a></li>
+							<li class="my-3"><a href="#">Phone 1: 07875651860</a></li>
+							<li class="my-3"><a href="#">Phone 2: 07944804016</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 col-12 footer-list my-3" data-aos="fade-up">
+						<h5 class="footer__title">Links</h5>
+						<ul class="list-unstyled">
+							<li class="my-3"><a href="index.html">Home</a></li>
+							<li class="my-3"><a href="about-us.html">About us</a></li>
+							<li class="my-3"><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+							<li class="my-3"><a href="#">Privacy Policy</a></li>
+							<li class="my-3"><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 col-sm-6 col-12 footer-list my-3" data-aos="fade-up">
+						<h5 class="footer__title">Registered & Authorized By</h5>
+						<ul class="list-unstyled">
+							<li class="my-3"><a href="https://register.fca.org.uk/ShPo_FirmDetailsPage?id=0010X00004ILDueQAH" target="_blank">Authorization FCA</a></li>
+							<li class="my-3"><a href="#">FCA Reg no : 825080</a></li>
+							<li class="my-3"><a href="#">HMRC :XPML00000136078 for dway website</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-2 col-sm-6 col-12 footer-list my-3 d-none" data-aos="fade-up">
+						<h5 class="footer__title">Resources</h5>
+
+						<ul class="list-inline mt-3">
+							<li class="list-inline-item mr-4">
+								<a href="#" target="_blank"><img src="/img/social/facebook.svg" alt="follow on facebook" class="img-fluid"></a>
+							</li>
+
+							<li class="list-inline-item mr-4">
+								<a href="#" target="_blank"><img src="/img/social/instagram.svg" alt="follow on Instagram" class="img-fluid"></a>
+							</li>
+
+							<li class="list-inline-item mr-4">
+								<a href="#" target="_blank"><img src="/img/social/twitter.svg" alt="follow on twitter" class="img-fluid"></a>
+							</li>
+
+						</ul>
+					</div>
+					<!-- /.footer-list -->
+				</div>
+			</div>
+
+			<div class="container">
+				<hr class="bg-white">
+				<div class="row">
+					<div class="col-lg-5 col-sm-6 col-12 about-widget footer-information" data-aos="fade-up">
+						<p class="footer__description">Copyright 2020 D-WAY REMIT, All Right Reserved.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<p class="footer__description mb-5 mt-3">D-Way Remit  is a leading digital cross border payments company which enables consumers, Small and Medium Enterprises and financial institutions to make international money transfers at a low cost. Our mission is to use technology to democratise financial services, making them affordable and available to all.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="js/numeral.min.js"></script>
+	<script src="js/utility.js"></script>
+</html>
