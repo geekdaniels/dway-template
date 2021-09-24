@@ -49,12 +49,15 @@ body {
 .font-11 {
     font-size: 11px !important;
 }
+
 .font-12 {
     font-size: 12px !important;
 }
+
 .font-13 {
     font-size: 13px;
 }
+
 .font-14 {
     font-size: 14px;
 }
@@ -122,7 +125,9 @@ body {
     font-size: 14px;
     font-weight: 500;
 }
-.calculator .conversion__title,.calculator .conversion {
+
+.calculator .conversion__title,
+.calculator .conversion {
     color: #2F465C;
     font-size: 14px;
     font-weight: 500;
@@ -177,7 +182,7 @@ body {
     color: var(--white);
 }
 
-.calculator .form-control{
+.calculator .form-control {
     height: 70px;
     border-radius: 0px;
     color: #000000;
@@ -185,13 +190,14 @@ body {
     padding-top: 20px;
 }
 
-.calculator .form-control::placeholder{
+.calculator .form-control::placeholder {
     border-radius: 0px;
     color: #000000;
     font-weight: 500;
 }
 
-.calculator .form-control:disabled, .form-control[readonly] {
+.calculator .form-control:disabled,
+.form-control[readonly] {
     background-color: #fff;
     opacity: 1;
 }
@@ -203,8 +209,12 @@ body {
     background-color: #004370;
 }
 
-.calculator label{
-    position: absolute; left: 10px; font-size: 12px; padding-top: 8px;color: #6B6B6B;
+.calculator label {
+    position: absolute;
+    left: 10px;
+    font-size: 12px;
+    padding-top: 8px;
+    color: #6B6B6B;
 }
 
 .top-up select.form-control {
@@ -285,7 +295,8 @@ a:focus {
     border: none;
 }
 
-thead tr th, tfoot tr th {
+thead tr th,
+tfoot tr th {
     font-size: 11px !important;
     font-weight: 500;
 }
@@ -394,7 +405,7 @@ SIDEBAR STYLE
     margin-right: 10px;
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 #sidebar a[aria-expanded="true"] {
     color: #000;
     background: var(--sidebar-hover);
@@ -405,7 +416,7 @@ a[data-toggle="collapse"] {
     position: relative;
 }
 
-#sidebar-2 ul li.active>a,
+#sidebar-2 ul li.active > a,
 #sidebar a[aria-expanded="true"] {
     color: #1679e2;
     text-decoration: underline;
@@ -517,11 +528,63 @@ CONTENT STYLE
     margin-top: 5px;
     border-radius: 5px;
 }
+
 .dash--stat h1 {
     font-size: 40px;
     font-weight: 700;
     color: #000;
 }
+
+.is-parent {
+    display: flex;
+    padding: 25px 0 5px;
+    justify-content: space-between;
+}
+
+.tile .title {
+    font-weight: 600;
+}
+
+.list-item figure {
+    flex: 0.25;
+    display: flex;
+    align-items: center;
+}
+
+.list-item .is-child:nth-child(2) {
+    padding: 0 30px;
+}
+
+.list-item .is-child:nth-child(3) {
+    justify-content: flex-end !important;
+}
+
+.review-card {
+    border: 1px dashed #e2e6e8;
+}
+
+.dl-horizontal-item {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.dl-horizontal-item dt {
+    flex: 1 2 auto;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+
+.dl-horizontal-item dd {
+    flex: 1 1 auto;
+    text-align: right;
+    word-break: break-all;
+}
+
+.transfer-details p {
+    font-size: 13px;
+}
+
 
 /*DASHBOARD STYLES END*/
 
@@ -628,4 +691,3 @@ MEDIAQUERIES
         border-right: 0px solid #dee2e6 !important;
     }
 }
-
